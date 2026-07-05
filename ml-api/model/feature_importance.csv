@@ -1,0 +1,14 @@
+,0
+credit_score,0.24685086
+missed_payments_last_12m,0.12987143
+debt_to_income_ratio,0.08927521
+credit_utilization,0.070660695
+installment_to_income_ratio,0.06982392
+loan_term_months,0.057984527
+employment_years,0.056550626
+existing_loans_count,0.054161824
+monthly_installment,0.05002012
+age,0.049701508
+annual_income,0.04845153
+loan_amount,0.04419633
+employment_type_enc,0.032451298
