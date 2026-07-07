@@ -12,7 +12,7 @@ from sklearn.metrics import (
 )
 from xgboost import XGBClassifier
 
-df = pd.read_csv("/home/claude/default-prediction/data/loan_data.csv")
+df = pd.read_csv("data/loan_data.csv")
 
 # Encode categorical
 le = LabelEncoder()
@@ -62,10 +62,10 @@ print("\n=== Top Risk Factors ===")
 print(importances)
 
 # Save artifacts
-joblib.dump(model, "/home/claude/default-prediction/model/model.pkl")
-joblib.dump(scaler, "/home/claude/default-prediction/model/scaler.pkl")
-joblib.dump(feature_cols, "/home/claude/default-prediction/model/feature_columns.pkl")
-joblib.dump(le, "/home/claude/default-prediction/model/employment_encoder.pkl")
-importances.to_csv("/home/claude/default-prediction/model/feature_importance.csv")
+joblib.dump(model, "model/model.pkl")
+joblib.dump(scaler, "model/scaler.pkl")
+joblib.dump(feature_cols, "model/feature_columns.pkl")
+joblib.dump(le, "model/employment_encoder.pkl")
+importances.to_csv("model/feature_importance.csv")
 
-print("\nSaved model artifacts to /home/claude/default-prediction/model/")
+print("\nSaved model artifacts to model/")
